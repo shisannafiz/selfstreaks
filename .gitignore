@@ -1,0 +1,3 @@
+node_modules/
+
+mongodb+srv://shisannafiz:3agbElUZycjOidQy@selfstreaks.z1bhi.mongodb.net/<dbname>?retryWrites=true&w=majority
