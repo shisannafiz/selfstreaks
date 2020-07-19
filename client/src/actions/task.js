@@ -84,8 +84,6 @@ export const updateStreak = (id, today) => async (dispatch) => {
     };
 
     if (last !== today && today !== yest && yest !== last) {
-      // A
-      console.log('next');
       body = {
         streak: streak + 1,
         complete: true,
@@ -93,16 +91,12 @@ export const updateStreak = (id, today) => async (dispatch) => {
         last: today,
       };
     } else if (last === yest && last !== today) {
-      // B
-      console.log('up');
       body = {
         streak: streak + 1,
         complete: true,
         last: today,
       };
     } else if (last === today && last !== yest) {
-      // C
-      console.log('down');
       body = {
         streak: streak - 1,
         complete: false,

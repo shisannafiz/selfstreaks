@@ -17,7 +17,8 @@ const Settings = ({
   // }
   useEffect(() => {
     getTasks();
-  });
+    console.log('testing');
+  }, []);
 
   const [data, setData] = useState(false);
   const [edit, setEdit] = useState(false);

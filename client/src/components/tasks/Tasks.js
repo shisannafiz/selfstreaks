@@ -7,16 +7,10 @@ import TaskItem from './TaskItem';
 import { getTasks, clearCheck } from '../../actions/task';
 import TaskForm from './TaskForm';
 
-const Tasks = ({
-  getTasks,
-  auth: {
-    // user: { _id },
-  },
-  task: { tasks, loading },
-}) => {
+const Tasks = ({ getTasks, auth: {}, task: { tasks, loading } }) => {
   useEffect(() => {
     getTasks();
-  });
+  }, []);
 
   const [today, setToday] = useState(0);
 
