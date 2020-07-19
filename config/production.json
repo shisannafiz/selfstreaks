@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://shisannafiz:3agbElUZycjOidQy@selfstreaks.z1bhi.mongodb.net/selfstreaks?retryWrites=true",
+  "jwtSecret": "mysecrettoken"
+}
