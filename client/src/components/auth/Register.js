@@ -4,6 +4,7 @@ import { Link, Redirect } from 'react-router-dom';
 import { setAlert } from '../../actions/alert';
 import { register } from '../../actions/auth';
 import PropTypes from 'prop-types';
+import cheese from '../../assets/cheese.png';
 
 // import axios from 'axios';
 
@@ -85,6 +86,10 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
       <p className="bottom">
         Already have an account? <Link to="/login">Sign In</Link>
       </p>
+      <div className="signature">
+        <h6 className="sn">Created by Shisan Nafiz</h6>
+        <img className="cheese" src={cheese}></img>
+      </div>
     </Fragment>
   );
 };

@@ -5,6 +5,7 @@ import Spinner from '../layout/Spinner';
 import TaskEdit from '../settings/TaskEdit';
 import { getTasks } from '../../actions/task';
 import { logout } from '../../actions/auth';
+import cheese from '../../assets/cheese.png';
 
 const Settings = ({
   getTasks,
@@ -74,6 +75,10 @@ const Settings = ({
         <button onClick={(e) => logout()} className="btn authbtn">
           Logout
         </button>
+      </div>
+      <div className="signature">
+        <h6 className="sn">Created by Shisan Nafiz</h6>
+        <img className="cheese" src={cheese}></img>
       </div>
     </Fragment>
   );

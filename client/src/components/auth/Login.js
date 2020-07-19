@@ -3,6 +3,7 @@ import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { login } from '../../actions/auth';
+import cheese from '../../assets/cheese.png';
 
 const Login = ({ login, isAuthenticated }) => {
   const [formData, setFormData] = useState({
@@ -57,6 +58,10 @@ const Login = ({ login, isAuthenticated }) => {
       <p className="bottom">
         Don't have an account? <Link to="/register">Sign Up</Link>
       </p>
+      <div className="signature">
+        <h6 className="sn">Created by Shisan Nafiz</h6>
+        <img className="cheese" src={cheese}></img>
+      </div>
     </Fragment>
   );
 };
