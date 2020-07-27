@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
 import TaskItem from './TaskItem';
-// import TaskEdit from '../settings/TaskEdit';
 import { getTasks, clearCheck } from '../../actions/task';
 import TaskForm from './TaskForm';
 
@@ -30,16 +29,6 @@ const Tasks = ({ getTasks, auth: {}, task: { tasks, loading } }) => {
     <Fragment>
       <h1 className="header">Daily Tasks</h1>
       <TaskForm />
-      {/* 
-      <div className="">
-        {tasks.map((task) =>
-          task.user === auth.user._id ? (
-            <TaskItem key={task._id} task={task} today={today} />
-          ) : (
-            <div></div>
-          )
-        )}
-      </div> */}
       <div className="">
         {tasks.map((task) => (
           <TaskItem key={task._id} task={task} today={today} />

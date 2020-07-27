@@ -6,7 +6,7 @@ import { deleteTask } from '../../actions/task';
 const TaskEdit = ({
   deleteTask,
   auth,
-  task: { _id, user, title, streak, complete },
+  task: { _id, user, title, streak },
   edit,
   data,
 }) => {

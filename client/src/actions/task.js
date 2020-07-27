@@ -75,8 +75,6 @@ export const updateStreak = (id, today) => async (dispatch) => {
 
     const { complete, last, yest, streak } = task.data;
 
-    // const today = 12;
-
     var body = {
       streak,
       complete,

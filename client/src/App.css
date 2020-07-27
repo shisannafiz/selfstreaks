@@ -1,15 +1,8 @@
 /* Global Styles */
 :root {
   --primary-color: #00927e;
-  /* --primary-color: #00afee; */
-  /* --primary-color: #0099b4; */
-  /* --primary-color: #009666; */
   --secondary-color: #e7b230;
-  /* --secondary-color: #d8a520; */
-  /* --secondary-color: #cf9d14; */
   --light-color: #fff8ee;
-  /* --light-color: #fff8ec; */
-  /* --light-color: #f4f4f4; */
   --dark-color: #f3eada;
   --danger-color: #dc3545;
 }
@@ -96,10 +89,6 @@ ul {
 .settings {
   text-align: right;
 }
-
-/* .logout {
-  font-size: 1rem;
-} */
 
 /* Text Styles */
 .header {
@@ -240,23 +229,6 @@ ul {
   border-radius: 7px;
 }
 
-/* .form textarea {
-  display: block;
-  width: 97%;
-  height: 40px;
-  padding: 0.4rem;
-  padding-left: 15px;
-  border-radius: 7px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  resize: none;
-} */
-
-/* .hide-l {
-  display: none;
-} */
-
 .bottom {
   margin-top: 1rem;
 }
@@ -272,7 +244,6 @@ ul {
 
 .setsub {
   font-size: 1.5rem;
-  /* padding-right: 10px; */
   line-height: 1;
   margin: 3rem 0 0.5rem 0;
   color: #777777;
@@ -290,8 +261,6 @@ ul {
 }
 
 .card {
-  /* padding: 10px;
-  background-color: var(--dark-color); */
   padding: 1px 10px;
   margin: 0 0 1rem 0;
   border-radius: 20px;
@@ -322,7 +291,6 @@ ul {
 .title-edit {
   display: grid;
   width: 425px;
-  /* padding-left: 10px; */
   font-size: 1.25rem;
 }
 
@@ -384,7 +352,6 @@ ul {
 
   /* Navbar */
   .navbar {
-    /* display: flex; */
     text-align: center;
     padding: 10px 0 5px 0;
     border-bottom: solid 3px var(--secondary-color);
@@ -417,8 +384,12 @@ ul {
     font-size: 1rem;
   }
 
-  .navbar .nopad {
+  .navbar .p1 {
     padding: 0 0.5rem;
+  }
+
+  .navbar .p2 {
+    padding: 0 14px 0 0;
   }
 
   .name {
@@ -429,7 +400,6 @@ ul {
 
   .fright {
     float: right;
-    /* margin-right: 15px; */
   }
 
   /* Text Styles */

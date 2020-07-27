@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Spinner from '../layout/Spinner';
@@ -8,17 +9,17 @@ import { logout } from '../../actions/auth';
 import cheese from '../../assets/cheese.png';
 
 const Settings = ({
+  isAuthenticated,
   getTasks,
   logout,
   auth: { user },
   task: { tasks, loading },
 }) => {
-  // if (isAuthenticated) {
-  //   return <Redirect to="/landing" />;
+  // if (!isAuthenticated) {
+  //   return <Redirect to="/login" />;
   // }
   useEffect(() => {
     getTasks();
-    console.log('testing');
   }, []);
 
   const [data, setData] = useState(false);
